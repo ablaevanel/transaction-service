@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Транзакции</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Мои Транзакции</h1>
+        <div id="statistics">
+            <h2>Статистика за месяц</h2>
+            <p><strong>Доходы:</strong> <span id="income">0</span> ₽</p>
+            <p><strong>Расходы:</strong> <span id="expense">0</span> ₽</p>
+        </div>
+        <div id="transactions-list">
+            <h2>Все Транзакции</h2>
+            <ul id="transactions">
+            </ul>
+        </div>
+
+        <a href="/api/transactions/add" class="button">Добавить транзакцию</a>
+        <button id="logout-button" onclick="window.location.href='http://localhost:8080/api/auth/logout';">
+            Выйти
+        </button>
+        <p id="message"></p>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
